@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MusicPlayer
-{
-    internal static class Program
+{ 
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -20,3 +20,8 @@ namespace MusicPlayer
         }
     }
 }
+
+
+
+
+
