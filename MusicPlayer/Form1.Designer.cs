@@ -33,13 +33,13 @@
             this.logo = new System.Windows.Forms.Label();
             this.songs = new System.Windows.Forms.ListBox();
             this.btnSelectSong = new System.Windows.Forms.Button();
-            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.sortButton = new System.Windows.Forms.Button();
             this.playList = new System.Windows.Forms.ListBox();
             this.AddPlaylist = new System.Windows.Forms.Button();
             this.clearPlayList = new System.Windows.Forms.Button();
             this.ReadLyrics = new System.Windows.Forms.RichTextBox();
             this.playButton = new System.Windows.Forms.Button();
+            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.SuspendLayout();
@@ -72,13 +72,6 @@
             this.btnSelectSong.UseVisualStyleBackColor = true;
             this.btnSelectSong.Click += new System.EventHandler(this.btnSelectSong_Click);
             // 
-            // mediaPlayer
-            // 
-            resources.ApplyResources(this.mediaPlayer, "mediaPlayer");
-            this.mediaPlayer.Name = "mediaPlayer";
-            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
-            this.mediaPlayer.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
             // sortButton
             // 
             resources.ApplyResources(this.sortButton, "sortButton");
@@ -109,6 +102,7 @@
             // 
             // ReadLyrics
             // 
+            this.ReadLyrics.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.ReadLyrics, "ReadLyrics");
             this.ReadLyrics.Name = "ReadLyrics";
             // 
@@ -118,6 +112,13 @@
             this.playButton.Name = "playButton";
             this.playButton.UseVisualStyleBackColor = true;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            // 
+            // mediaPlayer
+            // 
+            resources.ApplyResources(this.mediaPlayer, "mediaPlayer");
+            this.mediaPlayer.Name = "mediaPlayer";
+            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
+            this.mediaPlayer.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // MusicPlayer
             // 

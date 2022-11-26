@@ -80,7 +80,7 @@ namespace MusicPlayer
         private void playButton_Click(object sender, EventArgs e)
         {
             mediaPlayer.Ctlcontrols.play();
-            var dataBase = new DataBase(songs,ReadLyrics);
+            var music = new Music(songs, ReadLyrics);
         }
 
         private void Form1_Load(object sender, EventArgs e)

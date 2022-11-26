@@ -117,51 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;logo.Name" xml:space="preserve">
-    <value>logo</value>
-  </data>
-  <data name="&gt;&gt;logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;logo.Parent" xml:space="preserve">
-    <value>TopPanel</value>
-  </data>
-  <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TopPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1051, 70</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Name" xml:space="preserve">
-    <value>TopPanel</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="logo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 9</value>
   </data>
@@ -186,6 +150,30 @@
   <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="TopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TopPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1051, 70</value>
+  </data>
+  <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Name" xml:space="preserve">
+    <value>TopPanel</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="songs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
   </data>
@@ -196,7 +184,7 @@
     <value>818, 70</value>
   </data>
   <data name="songs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 558</value>
+    <value>233, 535</value>
   </data>
   <data name="songs.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -240,43 +228,8 @@
   <data name="&gt;&gt;btnSelectSong.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="mediaPlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="mediaPlayer.Enabled" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mediaPlayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 70</value>
-  </data>
-  <data name="mediaPlayer.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAKIAAAABAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
-        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
-        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAASRsAAJoW
-        AAAL
-</value>
-  </data>
-  <data name="mediaPlayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 558</value>
-  </data>
-  <data name="mediaPlayer.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;mediaPlayer.Name" xml:space="preserve">
-    <value>mediaPlayer</value>
-  </data>
-  <data name="&gt;&gt;mediaPlayer.Type" xml:space="preserve">
-    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mediaPlayer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;mediaPlayer.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="sortButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="sortButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>818, 552</value>
@@ -306,10 +259,10 @@
     <value>20</value>
   </data>
   <data name="playList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 70</value>
+    <value>629, 66</value>
   </data>
   <data name="playList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 484</value>
+    <value>183, 464</value>
   </data>
   <data name="playList.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -325,6 +278,9 @@
   </data>
   <data name="&gt;&gt;playList.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="AddPlaylist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="AddPlaylist.Location" type="System.Drawing.Point, System.Drawing">
     <value>629, 443</value>
@@ -349,6 +305,9 @@
   </data>
   <data name="&gt;&gt;AddPlaylist.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="clearPlayList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="clearPlayList.Location" type="System.Drawing.Point, System.Drawing">
     <value>629, 499</value>
@@ -398,11 +357,14 @@
   <data name="&gt;&gt;ReadLyrics.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="playButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="playButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 515</value>
+    <value>512, 457</value>
   </data>
   <data name="playButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 41</value>
+    <value>111, 58</value>
   </data>
   <data name="playButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -422,6 +384,44 @@
   <data name="&gt;&gt;playButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="mediaPlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mediaPlayer.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mediaPlayer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="mediaPlayer.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAABAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAASRsAAJoW
+        AAAL
+</value>
+  </data>
+  <data name="mediaPlayer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>818, 535</value>
+  </data>
+  <data name="mediaPlayer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mediaPlayer.Name" xml:space="preserve">
+    <value>mediaPlayer</value>
+  </data>
+  <data name="&gt;&gt;mediaPlayer.Type" xml:space="preserve">
+    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mediaPlayer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mediaPlayer.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -429,7 +429,10 @@
     <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1051, 628</value>
+    <value>1051, 605</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
