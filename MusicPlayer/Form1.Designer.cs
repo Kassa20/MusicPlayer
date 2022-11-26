@@ -38,7 +38,8 @@
             this.playList = new System.Windows.Forms.ListBox();
             this.AddPlaylist = new System.Windows.Forms.Button();
             this.clearPlayList = new System.Windows.Forms.Button();
-            this.Lyrics = new System.Windows.Forms.ListBox();
+            this.ReadLyrics = new System.Windows.Forms.RichTextBox();
+            this.playButton = new System.Windows.Forms.Button();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.SuspendLayout();
@@ -106,19 +107,25 @@
             this.clearPlayList.UseVisualStyleBackColor = true;
             this.clearPlayList.Click += new System.EventHandler(this.clearPlayList_Click);
             // 
-            // Lyrics
+            // ReadLyrics
             // 
-            this.Lyrics.FormattingEnabled = true;
-            resources.ApplyResources(this.Lyrics, "Lyrics");
-            this.Lyrics.Name = "Lyrics";
-            this.Lyrics.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            resources.ApplyResources(this.ReadLyrics, "ReadLyrics");
+            this.ReadLyrics.Name = "ReadLyrics";
+            // 
+            // playButton
+            // 
+            resources.ApplyResources(this.playButton, "playButton");
+            this.playButton.Name = "playButton";
+            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
             // MusicPlayer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Controls.Add(this.Lyrics);
+            this.Controls.Add(this.playButton);
+            this.Controls.Add(this.ReadLyrics);
             this.Controls.Add(this.clearPlayList);
             this.Controls.Add(this.AddPlaylist);
             this.Controls.Add(this.playList);
@@ -148,7 +155,8 @@
         private System.Windows.Forms.ListBox playList;
         private System.Windows.Forms.Button AddPlaylist;
         private System.Windows.Forms.Button clearPlayList;
-        private System.Windows.Forms.ListBox Lyrics;
+        private System.Windows.Forms.RichTextBox ReadLyrics;
+        private System.Windows.Forms.Button playButton;
     }
 }
 

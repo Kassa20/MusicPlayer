@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MusicPlayer
 {
@@ -17,7 +18,7 @@ namespace MusicPlayer
         public MusicPlayer()
         {
             InitializeComponent();
-            //mediaPlayer.Visible = false;
+            mediaPlayer.settings.autoStart = false;
 
         }
 
@@ -65,7 +66,8 @@ namespace MusicPlayer
 
         private void AddPlaylist_Click(object sender, EventArgs e)
         {
-            var newPlaylist = new PList(files, playList, songs);
+            var newPlaylist = new PList(files, playList, songs);         
+
         }
 
         private void clearPlayList_Click(object sender, EventArgs e)
@@ -75,9 +77,10 @@ namespace MusicPlayer
             
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void playButton_Click(object sender, EventArgs e)
         {
-            mediaPlayer.URL = paths[Lyrics.SelectedIndex];
+            mediaPlayer.Ctlcontrols.play();
+            var dataBase = new DataBase(songs,ReadLyrics);
         }
 
         private void Form1_Load(object sender, EventArgs e)
