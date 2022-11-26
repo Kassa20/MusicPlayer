@@ -157,7 +157,7 @@
     <value>0, 0</value>
   </data>
   <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1019, 70</value>
+    <value>1051, 70</value>
   </data>
   <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -172,7 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="songs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -181,10 +181,10 @@
     <value>20</value>
   </data>
   <data name="songs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 70</value>
+    <value>818, 70</value>
   </data>
   <data name="songs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 535</value>
+    <value>233, 558</value>
   </data>
   <data name="songs.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -199,16 +199,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;songs.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="btnSelectSong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSelectSong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 466</value>
+    <value>818, 499</value>
   </data>
   <data name="btnSelectSong.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 57</value>
+    <value>233, 57</value>
   </data>
   <data name="btnSelectSong.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -226,18 +226,18 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSelectSong.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
-  <data name="axWindowsMediaPlayer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="mediaPlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="axWindowsMediaPlayer1.Enabled" type="System.Boolean, mscorlib">
+  <data name="mediaPlayer.Enabled" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="axWindowsMediaPlayer1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="mediaPlayer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 70</value>
   </data>
-  <data name="axWindowsMediaPlayer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="mediaPlayer.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
@@ -248,29 +248,29 @@
         AAAL
 </value>
   </data>
-  <data name="axWindowsMediaPlayer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>786, 535</value>
+  <data name="mediaPlayer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>818, 558</value>
   </data>
-  <data name="axWindowsMediaPlayer1.TabIndex" type="System.Int32, mscorlib">
+  <data name="mediaPlayer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Name" xml:space="preserve">
-    <value>axWindowsMediaPlayer1</value>
+  <data name="&gt;&gt;mediaPlayer.Name" xml:space="preserve">
+    <value>mediaPlayer</value>
   </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Type" xml:space="preserve">
+  <data name="&gt;&gt;mediaPlayer.Type" xml:space="preserve">
     <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;mediaPlayer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;axWindowsMediaPlayer1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;mediaPlayer.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="sortButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 529</value>
+    <value>818, 552</value>
   </data>
   <data name="sortButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 76</value>
+    <value>233, 76</value>
   </data>
   <data name="sortButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -288,6 +288,102 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sortButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="playList.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="playList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 70</value>
+  </data>
+  <data name="playList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 484</value>
+  </data>
+  <data name="playList.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;playList.Name" xml:space="preserve">
+    <value>playList</value>
+  </data>
+  <data name="&gt;&gt;playList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;playList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="AddPlaylist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 443</value>
+  </data>
+  <data name="AddPlaylist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 59</value>
+  </data>
+  <data name="AddPlaylist.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="AddPlaylist.Text" xml:space="preserve">
+    <value>AddToPlaylist</value>
+  </data>
+  <data name="&gt;&gt;AddPlaylist.Name" xml:space="preserve">
+    <value>AddPlaylist</value>
+  </data>
+  <data name="&gt;&gt;AddPlaylist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddPlaylist.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddPlaylist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="clearPlayList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>629, 499</value>
+  </data>
+  <data name="clearPlayList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 57</value>
+  </data>
+  <data name="clearPlayList.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="clearPlayList.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;clearPlayList.Name" xml:space="preserve">
+    <value>clearPlayList</value>
+  </data>
+  <data name="&gt;&gt;clearPlayList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clearPlayList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;clearPlayList.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Lyrics.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Lyrics.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 70</value>
+  </data>
+  <data name="Lyrics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 484</value>
+  </data>
+  <data name="Lyrics.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Lyrics.Name" xml:space="preserve">
+    <value>Lyrics</value>
+  </data>
+  <data name="&gt;&gt;Lyrics.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lyrics.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Lyrics.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -297,7 +393,7 @@
     <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1019, 605</value>
+    <value>1051, 628</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
