@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Data.SqlClient;
 
 namespace MusicPlayer
 {
@@ -21,6 +22,7 @@ namespace MusicPlayer
             mediaPlayer.settings.autoStart = false;
 
         }
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DSU\OneDrive\Documents\Songs.mdf;Integrated Security=True;Connect Timeout=30");
 
         String[] paths, files;
 
@@ -34,6 +36,7 @@ namespace MusicPlayer
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Multiselect = true;
+
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -52,9 +55,11 @@ namespace MusicPlayer
             
         }
 
+
         private void sortButton_Click(object sender, EventArgs e)
         {
-             var sort = new Sort(songs, files);
+    
+            
 
         }
 
@@ -66,6 +71,7 @@ namespace MusicPlayer
 
         private void AddPlaylist_Click(object sender, EventArgs e)
         {
+
             var newPlaylist = new PList(files, playList, songs);         
 
         }
@@ -74,14 +80,45 @@ namespace MusicPlayer
         {
             var clear = new PList(files, playList, songs);
             clear.clearPlayList(playList);
-            
+   
         }
 
         private void playButton_Click(object sender, EventArgs e)
         {
             mediaPlayer.Ctlcontrols.play();
             var music = new Music(songs, ReadLyrics);
+            //var stats = new DataBase(songs);
+
+            int i = 1;
+
+            connect.Open();
+            string curItem = songs.SelectedItem.ToString();
+            string val = "Yes";
+
+            string query = "Insert into Songs values ('" + curItem + "') ";
+
+            SqlCommand cmd = new SqlCommand(query, connect);
+            cmd.ExecuteNonQuery();
+            
+            
+            connect.Close();
+
+
+
         }
+
+        private void MostPlayedbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void ReadLyrics_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusicPlayer));
             this.TopPanel = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.Label();
             this.songs = new System.Windows.Forms.ListBox();
             this.btnSelectSong = new System.Windows.Forms.Button();
             this.sortButton = new System.Windows.Forms.Button();
@@ -40,22 +39,15 @@
             this.ReadLyrics = new System.Windows.Forms.RichTextBox();
             this.playButton = new System.Windows.Forms.Button();
             this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.TopPanel.SuspendLayout();
+            this.MostPlayedbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanel
             // 
             this.TopPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TopPanel.Controls.Add(this.logo);
             resources.ApplyResources(this.TopPanel, "TopPanel");
             this.TopPanel.Name = "TopPanel";
-            // 
-            // logo
-            // 
-            resources.ApplyResources(this.logo, "logo");
-            this.logo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logo.Name = "logo";
             // 
             // songs
             // 
@@ -105,6 +97,7 @@
             this.ReadLyrics.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.ReadLyrics, "ReadLyrics");
             this.ReadLyrics.Name = "ReadLyrics";
+            this.ReadLyrics.TextChanged += new System.EventHandler(this.ReadLyrics_TextChanged);
             // 
             // playButton
             // 
@@ -120,11 +113,19 @@
             this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
             this.mediaPlayer.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
+            // MostPlayedbutton
+            // 
+            resources.ApplyResources(this.MostPlayedbutton, "MostPlayedbutton");
+            this.MostPlayedbutton.Name = "MostPlayedbutton";
+            this.MostPlayedbutton.UseVisualStyleBackColor = true;
+            this.MostPlayedbutton.Click += new System.EventHandler(this.MostPlayedbutton_Click);
+            // 
             // MusicPlayer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.MostPlayedbutton);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.ReadLyrics);
             this.Controls.Add(this.clearPlayList);
@@ -138,8 +139,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MusicPlayer";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.TopPanel.ResumeLayout(false);
-            this.TopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
@@ -148,7 +147,6 @@
         #endregion
 
         private System.Windows.Forms.Panel TopPanel;
-        private System.Windows.Forms.Label logo;
         private System.Windows.Forms.ListBox songs;
         private System.Windows.Forms.Button btnSelectSong;
         private AxWMPLib.AxWindowsMediaPlayer mediaPlayer;
@@ -158,6 +156,7 @@
         private System.Windows.Forms.Button clearPlayList;
         private System.Windows.Forms.RichTextBox ReadLyrics;
         private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button MostPlayedbutton;
     }
 }
 

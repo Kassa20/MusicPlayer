@@ -9,14 +9,13 @@ namespace MusicPlayer
 {
     public class Sort
     {
-        public Sort(ListBox playlist, String[] files)
+        public Sort(ListBox songs, String[] files)
         {
-            playlist.Items.Clear();
-            int j = files.Length-1;
-            for (int i = 0; i < files.Length; i++)
+            songs.Items.Clear();
+            int j;
+            for (j = files.Length - 1; j >= 0; j--)
             {
-                playlist.Items.Add(files[j]);
-                j--;
+                songs.Items.Add(files[j]);
             }
         }
 
