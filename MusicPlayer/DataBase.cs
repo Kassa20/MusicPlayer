@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -11,21 +13,30 @@ namespace MusicPlayer
 {
     public class DataBase
     {
-        public DataBase(ListBox songs)
+        public DataBase(ListBox songs, SqlConnection connect)
         {
-            Hashtable ht = new Hashtable();
-            int count = 1;
+            int i = 1;
 
+            connect.Open();
             string curItem = songs.SelectedItem.ToString();
-            int index = songs.FindString(curItem);
 
-            if(!ht.Contains(curItem))
+
+
+            var cmd = connect.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from SongTable where songTitle='" + curItem + "'";
+
+            
+
+            if (!connect.Database.Contains(curItem))
             {
-                ht.Add(curItem, count);
+                string query = "Insert into SongTable values ('" + curItem + "', '" + i + "') ";
+
+                SqlCommand cmmd = new SqlCommand(query, connect);
+                cmmd.ExecuteNonQuery();
             }
-
-
-
+            connect.Close();
         }
     }
 }
+

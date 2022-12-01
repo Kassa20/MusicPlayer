@@ -22,7 +22,7 @@ namespace MusicPlayer
             mediaPlayer.settings.autoStart = false;
 
         }
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DSU\OneDrive\Documents\Songs.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\DSU\\OneDrive\\Documents\\MusicDataBase.mdf;Integrated Security=True;Connect Timeout=30");
 
         String[] paths, files;
 
@@ -56,13 +56,6 @@ namespace MusicPlayer
         }
 
 
-        private void sortButton_Click(object sender, EventArgs e)
-        {
-    
-            
-
-        }
-
         private void playList_SelectedIndexChanged(object sender, EventArgs e)
         {
             mediaPlayer.URL = paths[playList.SelectedIndex];
@@ -87,28 +80,15 @@ namespace MusicPlayer
         {
             mediaPlayer.Ctlcontrols.play();
             var music = new Music(songs, ReadLyrics);
-            //var stats = new DataBase(songs);
-
-            int i = 1;
-
-            connect.Open();
-            string curItem = songs.SelectedItem.ToString();
-            string val = "Yes";
-
-            string query = "Insert into Songs values ('" + curItem + "') ";
-
-            SqlCommand cmd = new SqlCommand(query, connect);
-            cmd.ExecuteNonQuery();
-            
-            
-            connect.Close();
-
-
+            var stats = new DataBase(songs, connect);
 
         }
 
+
         private void MostPlayedbutton_Click(object sender, EventArgs e)
         {
+            var st = new Form2();
+            st.ShowDialog();
 
         }
 
@@ -118,7 +98,10 @@ namespace MusicPlayer
 
         }
 
+        private void TopPanel_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -126,7 +126,7 @@
     <value>0, 0</value>
   </data>
   <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1051, 70</value>
+    <value>1045, 70</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
@@ -142,7 +142,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="songs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -151,10 +151,10 @@
     <value>20</value>
   </data>
   <data name="songs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>818, 70</value>
+    <value>812, 70</value>
   </data>
   <data name="songs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 535</value>
+    <value>233, 623</value>
   </data>
   <data name="songs.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -169,13 +169,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;songs.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btnSelectSong.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnSelectSong.Location" type="System.Drawing.Point, System.Drawing">
-    <value>818, 499</value>
+    <value>812, 636</value>
   </data>
   <data name="btnSelectSong.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 57</value>
@@ -196,43 +196,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSelectSong.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="sortButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="sortButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>818, 552</value>
-  </data>
-  <data name="sortButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 76</value>
-  </data>
-  <data name="sortButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="sortButton.Text" xml:space="preserve">
-    <value>Sort</value>
-  </data>
-  <data name="&gt;&gt;sortButton.Name" xml:space="preserve">
-    <value>sortButton</value>
-  </data>
-  <data name="&gt;&gt;sortButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sortButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;sortButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="playList.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="playList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 66</value>
+    <value>629, 26</value>
   </data>
   <data name="playList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 464</value>
+    <value>183, 564</value>
   </data>
   <data name="playList.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -249,14 +222,17 @@
   <data name="&gt;&gt;playList.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="AddPlaylist.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="AddPlaylist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="AddPlaylist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 443</value>
+    <value>386, 540</value>
   </data>
   <data name="AddPlaylist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 59</value>
+    <value>133, 58</value>
   </data>
   <data name="AddPlaylist.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -276,14 +252,17 @@
   <data name="&gt;&gt;AddPlaylist.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="clearPlayList.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="clearPlayList.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="clearPlayList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 499</value>
+    <value>251, 540</value>
   </data>
   <data name="clearPlayList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 57</value>
+    <value>129, 58</value>
   </data>
   <data name="clearPlayList.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -304,10 +283,10 @@
     <value>3</value>
   </data>
   <data name="ReadLyrics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 70</value>
+    <value>-89, 24</value>
   </data>
   <data name="ReadLyrics.Size" type="System.Drawing.Size, System.Drawing">
-    <value>620, 469</value>
+    <value>712, 510</value>
   </data>
   <data name="ReadLyrics.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -327,11 +306,14 @@
   <data name="&gt;&gt;ReadLyrics.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="playButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="playButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="playButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 457</value>
+    <value>0, 540</value>
   </data>
   <data name="playButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 58</value>
@@ -354,6 +336,36 @@
   <data name="&gt;&gt;playButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="MostPlayedbutton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="MostPlayedbutton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MostPlayedbutton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 540</value>
+  </data>
+  <data name="MostPlayedbutton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 58</value>
+  </data>
+  <data name="MostPlayedbutton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="MostPlayedbutton.Text" xml:space="preserve">
+    <value>MostPlayed</value>
+  </data>
+  <data name="&gt;&gt;MostPlayedbutton.Name" xml:space="preserve">
+    <value>MostPlayedbutton</value>
+  </data>
+  <data name="&gt;&gt;MostPlayedbutton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MostPlayedbutton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MostPlayedbutton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="mediaPlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -375,7 +387,7 @@
 </value>
   </data>
   <data name="mediaPlayer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 535</value>
+    <value>812, 623</value>
   </data>
   <data name="mediaPlayer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -390,31 +402,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mediaPlayer.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="MostPlayedbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 399</value>
-  </data>
-  <data name="MostPlayedbutton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 52</value>
-  </data>
-  <data name="MostPlayedbutton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="MostPlayedbutton.Text" xml:space="preserve">
-    <value>MostPlayed</value>
-  </data>
-  <data name="&gt;&gt;MostPlayedbutton.Name" xml:space="preserve">
-    <value>MostPlayedbutton</value>
-  </data>
-  <data name="&gt;&gt;MostPlayedbutton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MostPlayedbutton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MostPlayedbutton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -423,7 +411,10 @@
     <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1051, 605</value>
+    <value>1045, 693</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

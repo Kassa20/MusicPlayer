@@ -32,14 +32,13 @@
             this.TopPanel = new System.Windows.Forms.Panel();
             this.songs = new System.Windows.Forms.ListBox();
             this.btnSelectSong = new System.Windows.Forms.Button();
-            this.sortButton = new System.Windows.Forms.Button();
             this.playList = new System.Windows.Forms.ListBox();
             this.AddPlaylist = new System.Windows.Forms.Button();
             this.clearPlayList = new System.Windows.Forms.Button();
             this.ReadLyrics = new System.Windows.Forms.RichTextBox();
             this.playButton = new System.Windows.Forms.Button();
-            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.MostPlayedbutton = new System.Windows.Forms.Button();
+            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +47,7 @@
             this.TopPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             resources.ApplyResources(this.TopPanel, "TopPanel");
             this.TopPanel.Name = "TopPanel";
+            this.TopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanel_Paint);
             // 
             // songs
             // 
@@ -64,13 +64,6 @@
             this.btnSelectSong.UseVisualStyleBackColor = true;
             this.btnSelectSong.Click += new System.EventHandler(this.btnSelectSong_Click);
             // 
-            // sortButton
-            // 
-            resources.ApplyResources(this.sortButton, "sortButton");
-            this.sortButton.Name = "sortButton";
-            this.sortButton.UseVisualStyleBackColor = true;
-            this.sortButton.Click += new System.EventHandler(this.sortButton_Click);
-            // 
             // playList
             // 
             this.playList.FormattingEnabled = true;
@@ -80,31 +73,46 @@
             // 
             // AddPlaylist
             // 
+            this.AddPlaylist.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.AddPlaylist, "AddPlaylist");
+            this.AddPlaylist.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.AddPlaylist.Name = "AddPlaylist";
-            this.AddPlaylist.UseVisualStyleBackColor = true;
+            this.AddPlaylist.UseVisualStyleBackColor = false;
             this.AddPlaylist.Click += new System.EventHandler(this.AddPlaylist_Click);
             // 
             // clearPlayList
             // 
+            this.clearPlayList.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.clearPlayList, "clearPlayList");
+            this.clearPlayList.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.clearPlayList.Name = "clearPlayList";
-            this.clearPlayList.UseVisualStyleBackColor = true;
+            this.clearPlayList.UseVisualStyleBackColor = false;
             this.clearPlayList.Click += new System.EventHandler(this.clearPlayList_Click);
             // 
             // ReadLyrics
             // 
-            this.ReadLyrics.BackColor = System.Drawing.Color.Gainsboro;
+            this.ReadLyrics.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.ReadLyrics, "ReadLyrics");
             this.ReadLyrics.Name = "ReadLyrics";
             this.ReadLyrics.TextChanged += new System.EventHandler(this.ReadLyrics_TextChanged);
             // 
             // playButton
             // 
+            this.playButton.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.playButton, "playButton");
+            this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.Name = "playButton";
-            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.UseVisualStyleBackColor = false;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
+            // 
+            // MostPlayedbutton
+            // 
+            this.MostPlayedbutton.BackColor = System.Drawing.Color.IndianRed;
+            resources.ApplyResources(this.MostPlayedbutton, "MostPlayedbutton");
+            this.MostPlayedbutton.ForeColor = System.Drawing.Color.White;
+            this.MostPlayedbutton.Name = "MostPlayedbutton";
+            this.MostPlayedbutton.UseVisualStyleBackColor = false;
+            this.MostPlayedbutton.Click += new System.EventHandler(this.MostPlayedbutton_Click);
             // 
             // mediaPlayer
             // 
@@ -112,13 +120,6 @@
             this.mediaPlayer.Name = "mediaPlayer";
             this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
             this.mediaPlayer.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
-            // MostPlayedbutton
-            // 
-            resources.ApplyResources(this.MostPlayedbutton, "MostPlayedbutton");
-            this.MostPlayedbutton.Name = "MostPlayedbutton";
-            this.MostPlayedbutton.UseVisualStyleBackColor = true;
-            this.MostPlayedbutton.Click += new System.EventHandler(this.MostPlayedbutton_Click);
             // 
             // MusicPlayer
             // 
@@ -131,7 +132,6 @@
             this.Controls.Add(this.clearPlayList);
             this.Controls.Add(this.AddPlaylist);
             this.Controls.Add(this.playList);
-            this.Controls.Add(this.sortButton);
             this.Controls.Add(this.mediaPlayer);
             this.Controls.Add(this.btnSelectSong);
             this.Controls.Add(this.songs);
@@ -150,7 +150,6 @@
         private System.Windows.Forms.ListBox songs;
         private System.Windows.Forms.Button btnSelectSong;
         private AxWMPLib.AxWindowsMediaPlayer mediaPlayer;
-        private System.Windows.Forms.Button sortButton;
         private System.Windows.Forms.ListBox playList;
         private System.Windows.Forms.Button AddPlaylist;
         private System.Windows.Forms.Button clearPlayList;
