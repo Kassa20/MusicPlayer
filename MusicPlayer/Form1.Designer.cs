@@ -44,7 +44,7 @@
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TopPanel.BackColor = System.Drawing.Color.Gold;
             resources.ApplyResources(this.TopPanel, "TopPanel");
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanel_Paint);
@@ -59,13 +59,15 @@
             // 
             // btnSelectSong
             // 
+            this.btnSelectSong.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.btnSelectSong, "btnSelectSong");
             this.btnSelectSong.Name = "btnSelectSong";
-            this.btnSelectSong.UseVisualStyleBackColor = true;
+            this.btnSelectSong.UseVisualStyleBackColor = false;
             this.btnSelectSong.Click += new System.EventHandler(this.btnSelectSong_Click);
             // 
             // playList
             // 
+            this.playList.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.playList.FormattingEnabled = true;
             resources.ApplyResources(this.playList, "playList");
             this.playList.Name = "playList";
@@ -126,11 +128,11 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Controls.Add(this.AddPlaylist);
             this.Controls.Add(this.MostPlayedbutton);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.ReadLyrics);
             this.Controls.Add(this.clearPlayList);
-            this.Controls.Add(this.AddPlaylist);
             this.Controls.Add(this.playList);
             this.Controls.Add(this.mediaPlayer);
             this.Controls.Add(this.btnSelectSong);

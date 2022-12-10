@@ -20,21 +20,44 @@ namespace MusicPlayer
             connect.Open();
             string curItem = songs.SelectedItem.ToString();
 
-
-
-            var cmd = connect.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from SongTable where songTitle='" + curItem + "'";
-
-            
-
-            if (!connect.Database.Contains(curItem))
+            try
             {
+
+                string sql = "SELECT SongTitle FROM SongTable WHERE songTitle = ('" + curItem + "')";
+
+                SqlCommand cmd2 = new SqlCommand(sql, connect);
+                object result = cmd2.ExecuteScalar();
+
+                string value = (string)result;
+
+
+                if (!value.Equals(curItem))
+                {
+                    string query = "Insert into SongTable values ('" + curItem + "', '" + i + "') ";
+
+                    SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.ExecuteNonQuery();
+                }
+
+
+
+                string update = "UPDATE SongTable SET timesPlayed = timesPlayed + 1 WHERE songTitle = ('" + curItem + "')";
+                SqlCommand updatecmd = new SqlCommand(update, connect);
+
+                int rowsAffected = updatecmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception e)
+            {
+
                 string query = "Insert into SongTable values ('" + curItem + "', '" + i + "') ";
 
-                SqlCommand cmmd = new SqlCommand(query, connect);
-                cmmd.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand(query, connect);
+                cmd.ExecuteNonQuery();
             }
+
+
             connect.Close();
         }
     }

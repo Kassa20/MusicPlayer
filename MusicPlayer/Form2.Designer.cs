@@ -36,9 +36,9 @@
             // 
             this.mostPlayedSongs.FormattingEnabled = true;
             this.mostPlayedSongs.ItemHeight = 20;
-            this.mostPlayedSongs.Location = new System.Drawing.Point(238, 50);
+            this.mostPlayedSongs.Location = new System.Drawing.Point(200, 50);
             this.mostPlayedSongs.Name = "mostPlayedSongs";
-            this.mostPlayedSongs.Size = new System.Drawing.Size(249, 404);
+            this.mostPlayedSongs.Size = new System.Drawing.Size(341, 404);
             this.mostPlayedSongs.TabIndex = 0;
             this.mostPlayedSongs.SelectedIndexChanged += new System.EventHandler(this.mostPlayedSongs_SelectedIndexChanged);
             // 

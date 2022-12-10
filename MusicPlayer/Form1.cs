@@ -89,7 +89,6 @@ namespace MusicPlayer
         {
             var st = new Form2();
             st.ShowDialog();
-
         }
 
 

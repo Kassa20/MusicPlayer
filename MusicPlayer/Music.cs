@@ -22,6 +22,7 @@ namespace MusicPlayer
                 ReadLyrics.Text = sr.ReadToEnd();
                 sr.Close();
             }
+
         }
 
     }
