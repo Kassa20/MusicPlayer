@@ -26,7 +26,8 @@ namespace MusicPlayer
 
         private void display_Click(object sender, EventArgs e)
         {
-            var stats = new Statistics(mostPlayedSongs, connect);
+            var stats = new Statistics(amountPlayed, mostPlayedSongs, connect);
+
         }
     }
 }

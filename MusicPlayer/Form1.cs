@@ -102,6 +102,11 @@ namespace MusicPlayer
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mediaPlayer.Ctlcontrols.pause();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
            

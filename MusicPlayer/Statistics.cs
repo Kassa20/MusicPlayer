@@ -15,7 +15,7 @@ namespace MusicPlayer
  
         }
 
-        public Statistics(ListBox mostPlayed, SqlConnection connect)
+        public Statistics(ListBox amountPlayed, ListBox mostPlayed, SqlConnection connect)
         {
             connect.Open();
 
@@ -37,6 +37,7 @@ namespace MusicPlayer
 
 
             mostPlayed.Items.Add(maxSong);
+            amountPlayed.Items.Add(max);
 
             connect.Close();
         }
