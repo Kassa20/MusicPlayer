@@ -38,25 +38,17 @@ namespace MusicPlayer
         {
             Connect.Open();
 
-            string maxValsql = "SELECT MAX(timesPlayed) FROM SongTable";
-
+            string maxValsql = "SELECT * FROM SongTable ORDER BY timesPlayed DESC";
             SqlCommand maxCommand = new SqlCommand(maxValsql, Connect);
-            object result = maxCommand.ExecuteScalar();
-
-            _max = (int)result;
-
-
-            string titlesql = "SELECT songTitle FROM SongTable WHERE timesPlayed = ('" + _max + "')";
-
-            SqlCommand maxCommand2 = new SqlCommand(titlesql, Connect);
-            object result2 = maxCommand2.ExecuteScalar();
-
-
-            _maxSong = (string)result2;
-
-
-            _mostPlayed.Items.Add(_maxSong);
-            _amountPlayed.Items.Add(_max);
+            
+            using(SqlDataReader reader = maxCommand.ExecuteReader())
+            {
+                while(reader.Read())
+                {
+                    _mostPlayed.Items.Add(reader[0]);
+                    _amountPlayed.Items.Add(reader[1]);
+                }
+            }
 
             Connect.Close();
         }

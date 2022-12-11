@@ -40,12 +40,15 @@
             this.MostPlayedbutton = new System.Windows.Forms.Button();
             this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.pauseButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.Color.SteelBlue;
+            this.TopPanel.BackColor = System.Drawing.Color.Crimson;
+            this.TopPanel.Controls.Add(this.textBox1);
             resources.ApplyResources(this.TopPanel, "TopPanel");
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanel_Paint);
@@ -53,7 +56,7 @@
             // songs
             // 
             this.songs.AllowDrop = true;
-            this.songs.BackColor = System.Drawing.Color.SandyBrown;
+            this.songs.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.songs, "songs");
             this.songs.FormattingEnabled = true;
             this.songs.Name = "songs";
@@ -61,7 +64,7 @@
             // 
             // btnSelectSong
             // 
-            this.btnSelectSong.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSelectSong.BackColor = System.Drawing.Color.Crimson;
             this.btnSelectSong.ForeColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.btnSelectSong, "btnSelectSong");
             this.btnSelectSong.Name = "btnSelectSong";
@@ -70,7 +73,8 @@
             // 
             // playList
             // 
-            this.playList.BackColor = System.Drawing.Color.SandyBrown;
+            this.playList.BackColor = System.Drawing.Color.White;
+            this.playList.ForeColor = System.Drawing.SystemColors.Desktop;
             this.playList.FormattingEnabled = true;
             resources.ApplyResources(this.playList, "playList");
             this.playList.Name = "playList";
@@ -78,7 +82,7 @@
             // 
             // AddPlaylist
             // 
-            this.AddPlaylist.BackColor = System.Drawing.Color.SteelBlue;
+            this.AddPlaylist.BackColor = System.Drawing.Color.Crimson;
             resources.ApplyResources(this.AddPlaylist, "AddPlaylist");
             this.AddPlaylist.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.AddPlaylist.Name = "AddPlaylist";
@@ -87,7 +91,7 @@
             // 
             // clearPlayList
             // 
-            this.clearPlayList.BackColor = System.Drawing.Color.SteelBlue;
+            this.clearPlayList.BackColor = System.Drawing.Color.Crimson;
             resources.ApplyResources(this.clearPlayList, "clearPlayList");
             this.clearPlayList.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.clearPlayList.Name = "clearPlayList";
@@ -96,14 +100,14 @@
             // 
             // ReadLyrics
             // 
-            this.ReadLyrics.BackColor = System.Drawing.Color.SandyBrown;
+            this.ReadLyrics.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.ReadLyrics, "ReadLyrics");
             this.ReadLyrics.Name = "ReadLyrics";
             this.ReadLyrics.TextChanged += new System.EventHandler(this.ReadLyrics_TextChanged);
             // 
             // playButton
             // 
-            this.playButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.playButton.BackColor = System.Drawing.Color.Crimson;
             resources.ApplyResources(this.playButton, "playButton");
             this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.Name = "playButton";
@@ -112,7 +116,7 @@
             // 
             // MostPlayedbutton
             // 
-            this.MostPlayedbutton.BackColor = System.Drawing.Color.SteelBlue;
+            this.MostPlayedbutton.BackColor = System.Drawing.Color.Crimson;
             resources.ApplyResources(this.MostPlayedbutton, "MostPlayedbutton");
             this.MostPlayedbutton.ForeColor = System.Drawing.Color.White;
             this.MostPlayedbutton.Name = "MostPlayedbutton";
@@ -128,12 +132,20 @@
             // 
             // pauseButton
             // 
-            this.pauseButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.pauseButton.BackColor = System.Drawing.Color.Crimson;
             resources.ApplyResources(this.pauseButton, "pauseButton");
             this.pauseButton.ForeColor = System.Drawing.Color.White;
             this.pauseButton.Name = "pauseButton";
             this.pauseButton.UseVisualStyleBackColor = false;
             this.pauseButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Crimson;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             // 
             // MusicPlayer
             // 
@@ -154,6 +166,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MusicPlayer";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.TopPanel.ResumeLayout(false);
+            this.TopPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
             this.ResumeLayout(false);
 
@@ -172,6 +186,7 @@
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button MostPlayedbutton;
         private System.Windows.Forms.Button pauseButton;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

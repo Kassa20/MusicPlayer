@@ -73,17 +73,15 @@ namespace MusicPlayer
 
         private void AddPlaylist_Click(object sender, EventArgs e)
         {
-
+            playList.Items.Clear();
             var newPlaylist = new PList(files, playList, songs);
             newPlaylist.addToPlaylist();
-
         }
 
         private void clearPlayList_Click(object sender, EventArgs e)
         {
             var clear = new PList(files, playList, songs);
             clear.clearPlayList(playList);
-   
         }
 
         private void playButton_Click(object sender, EventArgs e)

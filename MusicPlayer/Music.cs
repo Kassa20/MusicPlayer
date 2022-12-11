@@ -30,33 +30,58 @@ namespace MusicPlayer
             int index = Songs.FindString(curItem);
             string txtFile = "";
 
-            if (curItem == "Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video].mp3")
+            try
             {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Glyrics.txt");
-                ReadLyrics.Text = sr.ReadToEnd();
-                sr.Close();
+                if (curItem == "Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video].mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Glyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
+                else if (curItem == "The Way You Make Me Feel (2012 Remaster).mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Mlyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
+                else if (curItem == "You Rock My World.mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Rlyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
+                else if (curItem == "Fleetwood Mac - Dreams [with lyrics].mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Flyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
+                else if (curItem == "Red Hot Chili Peppers - Californication.mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Clyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
+                else if (curItem == "The Verve - Bitter Sweet Symphony.mp3")
+                {
+                    StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Blyrics.txt");
+                    ReadLyrics.Text = sr.ReadToEnd();
+                    sr.Close();
+                }
+
             }
 
-            else if (curItem == "The Way You Make Me Feel (2012 Remaster).mp3")
+            catch(Exception lr)
             {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Mlyrics.txt");
-                ReadLyrics.Text = sr.ReadToEnd();
-                sr.Close();
+                MessageBox.Show("No lyric not desplay");
             }
 
-            else if (curItem == "You Rock My World.mp3")
-            {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Rlyrics.txt");
-                ReadLyrics.Text = sr.ReadToEnd();
-                sr.Close();
-            }
 
-            else if (curItem == "Fleetwood Mac - Dreams [with lyrics].mp3")
-            {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\Lyrics\\" + "Flyrics.txt");
-                ReadLyrics.Text = sr.ReadToEnd();
-                sr.Close();
-            }
         }
 
 

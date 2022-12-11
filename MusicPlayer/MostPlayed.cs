@@ -26,6 +26,8 @@ namespace MusicPlayer
 
         private void display_Click(object sender, EventArgs e)
         {
+            mostPlayedSongs.Items.Clear();
+            amountPlayed.Items.Clear();
             var stats = new Statistics(amountPlayed, mostPlayedSongs, connect);
             stats.mostPlayedsong();
         }

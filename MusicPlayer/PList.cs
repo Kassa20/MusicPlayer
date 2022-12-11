@@ -40,7 +40,7 @@ namespace MusicPlayer
 
             catch (Exception e)
             {
-                MessageBox.Show("Playlist is Empty!");
+                MessageBox.Show("Songlist is Empty!");
             }
         }
 

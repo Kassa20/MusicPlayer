@@ -37,18 +37,18 @@
             // 
             // mostPlayedSongs
             // 
-            this.mostPlayedSongs.BackColor = System.Drawing.Color.SandyBrown;
+            this.mostPlayedSongs.BackColor = System.Drawing.Color.White;
             this.mostPlayedSongs.FormattingEnabled = true;
             this.mostPlayedSongs.ItemHeight = 20;
             this.mostPlayedSongs.Location = new System.Drawing.Point(42, 60);
             this.mostPlayedSongs.Name = "mostPlayedSongs";
-            this.mostPlayedSongs.Size = new System.Drawing.Size(284, 404);
+            this.mostPlayedSongs.Size = new System.Drawing.Size(311, 404);
             this.mostPlayedSongs.TabIndex = 0;
             this.mostPlayedSongs.SelectedIndexChanged += new System.EventHandler(this.mostPlayedSongs_SelectedIndexChanged);
             // 
             // display
             // 
-            this.display.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.display.BackColor = System.Drawing.Color.White;
             this.display.Location = new System.Drawing.Point(599, 325);
             this.display.Name = "display";
             this.display.Size = new System.Drawing.Size(116, 48);
@@ -59,16 +59,17 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 28);
+            this.textBox1.Location = new System.Drawing.Point(152, 28);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(117, 26);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Song";
+            this.textBox1.Text = "Songs";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // amountPlayed
             // 
-            this.amountPlayed.BackColor = System.Drawing.Color.SandyBrown;
+            this.amountPlayed.BackColor = System.Drawing.Color.White;
             this.amountPlayed.FormattingEnabled = true;
             this.amountPlayed.ItemHeight = 20;
             this.amountPlayed.Location = new System.Drawing.Point(359, 60);
@@ -80,22 +81,23 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(359, 28);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(120, 26);
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Amount Played";
             // 
-            // Form2
+            // MostPlayed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.Crimson;
             this.ClientSize = new System.Drawing.Size(800, 514);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.amountPlayed);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.display);
             this.Controls.Add(this.mostPlayedSongs);
-            this.Name = "Form2";
+            this.Name = "MostPlayed";
             this.Text = "Most Played";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
