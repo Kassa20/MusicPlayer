@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,10 +12,22 @@ namespace MusicPlayer
 {
     public class Music
     {
-        public Music(ListBox songs, RichTextBox ReadLyrics)
+        private ListBox _songs;
+        private RichTextBox _readLyrics;
+
+        public ListBox Songs { get => _songs; set => _songs = value; }
+        public RichTextBox ReadLyrics { get => _readLyrics; set => _readLyrics = value; }
+
+        public Music(ListBox songs, RichTextBox readLyrics)
         {
-            string curItem = songs.SelectedItem.ToString();
-            int index = songs.FindString(curItem);
+            Songs = songs;
+            ReadLyrics = readLyrics;
+        }
+
+        public void readSongs()
+        {
+            string curItem = Songs.SelectedItem.ToString();
+            int index = Songs.FindString(curItem);
             string txtFile = "";
 
             if (curItem == "Gotye - Somebody That I Used To Know (feat. Kimbra) [Official Music Video].mp3")
@@ -43,9 +57,8 @@ namespace MusicPlayer
                 ReadLyrics.Text = sr.ReadToEnd();
                 sr.Close();
             }
+        }
 
 
         }
-
-    }
 }

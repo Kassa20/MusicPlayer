@@ -20,7 +20,7 @@ namespace MusicPlayer
         {
             InitializeComponent();
             mediaPlayer.settings.autoStart = false;
-
+            MessageBox.Show("Select a song and enjoy!");
         }
         SqlConnection connect = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\DSU\\OneDrive\\Documents\\MusicDataBase.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -29,14 +29,23 @@ namespace MusicPlayer
 
         private void songs_SelectedIndexChanged(object sender, EventArgs e)
         {
-            mediaPlayer.URL = paths[songs.SelectedIndex];
+            try
+            {
+                mediaPlayer.URL = paths[songs.SelectedIndex];
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show("Select a song and click play");
+            }
+
         }
 
         private void btnSelectSong_Click(object sender, EventArgs e)
         {
+           
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Multiselect = true;
-
 
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -48,6 +57,8 @@ namespace MusicPlayer
                     songs.Items.Add(files[i]);
                 }
             }
+           
+        
 
         }
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
@@ -78,16 +89,26 @@ namespace MusicPlayer
 
         private void playButton_Click(object sender, EventArgs e)
         {
-            mediaPlayer.Ctlcontrols.play();
-            var music = new Music(songs, ReadLyrics);
-            var stats = new DataBase(songs, connect);
+            try
+            {
+                mediaPlayer.Ctlcontrols.play();
+                var music = new Music(songs, ReadLyrics);
+                var database = new DataBase(songs, connect);
+                music.readSongs();
+                database.updateDataBase();
+            }
+
+            catch(Exception p)
+            {
+                MessageBox.Show("No song to Play!");
+            }
 
         }
 
 
         private void MostPlayedbutton_Click(object sender, EventArgs e)
         {
-            var st = new Form2();
+            var st = new MostPlayed();
             st.ShowDialog();
         }
 
@@ -109,7 +130,7 @@ namespace MusicPlayer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

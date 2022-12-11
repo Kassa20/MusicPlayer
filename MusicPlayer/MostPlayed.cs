@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace MusicPlayer
 {
-    public partial class Form2 : Form
+    public partial class MostPlayed : Form
     {
-        public Form2()
+        public MostPlayed()
         {
             InitializeComponent();
         }
@@ -27,6 +27,11 @@ namespace MusicPlayer
         private void display_Click(object sender, EventArgs e)
         {
             var stats = new Statistics(amountPlayed, mostPlayedSongs, connect);
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
 
         }
     }

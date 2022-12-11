@@ -61,7 +61,8 @@
             // 
             // btnSelectSong
             // 
-            this.btnSelectSong.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnSelectSong.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSelectSong.ForeColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.btnSelectSong, "btnSelectSong");
             this.btnSelectSong.Name = "btnSelectSong";
             this.btnSelectSong.UseVisualStyleBackColor = false;

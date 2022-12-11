@@ -12,9 +12,20 @@ namespace MusicPlayer
     {
         public PList(String[] files, ListBox playlist, ListBox songs)
         {
-            string curItem = songs.SelectedItem.ToString();
-            int index = songs.FindString(curItem);
-            playlist.Items.Add(songs.Items[index]);
+
+            try
+            {
+                string curItem = songs.SelectedItem.ToString();
+                int index = songs.FindString(curItem);
+                playlist.Items.Add(songs.Items[index]);
+            }
+
+            catch(Exception e)
+            {
+                MessageBox.Show("Playlist is Empty!");
+            }
+
+
         }
         public void clearPlayList(ListBox playlist)
         {

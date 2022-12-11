@@ -1,6 +1,6 @@
 ﻿namespace MusicPlayer
 {
-    partial class Form2
+    partial class MostPlayed
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             // 
             // mostPlayedSongs
             // 
+            this.mostPlayedSongs.BackColor = System.Drawing.Color.SandyBrown;
             this.mostPlayedSongs.FormattingEnabled = true;
             this.mostPlayedSongs.ItemHeight = 20;
             this.mostPlayedSongs.Location = new System.Drawing.Point(42, 60);
@@ -67,6 +68,7 @@
             // 
             // amountPlayed
             // 
+            this.amountPlayed.BackColor = System.Drawing.Color.SandyBrown;
             this.amountPlayed.FormattingEnabled = true;
             this.amountPlayed.ItemHeight = 20;
             this.amountPlayed.Location = new System.Drawing.Point(359, 60);
@@ -86,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SandyBrown;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 514);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.amountPlayed);
@@ -94,7 +96,8 @@
             this.Controls.Add(this.display);
             this.Controls.Add(this.mostPlayedSongs);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Most Played";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
