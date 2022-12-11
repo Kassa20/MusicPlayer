@@ -20,7 +20,7 @@ namespace MusicPlayer
         {
             InitializeComponent();
             mediaPlayer.settings.autoStart = false;
-            MessageBox.Show("Select a song and enjoy!");
+            //MessageBox.Show("Select a song and enjoy!");
         }
         SqlConnection connect = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\DSU\\OneDrive\\Documents\\MusicDataBase.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -57,10 +57,8 @@ namespace MusicPlayer
                     songs.Items.Add(files[i]);
                 }
             }
-           
-        
-
         }
+
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
             
@@ -76,7 +74,8 @@ namespace MusicPlayer
         private void AddPlaylist_Click(object sender, EventArgs e)
         {
 
-            var newPlaylist = new PList(files, playList, songs);         
+            var newPlaylist = new PList(files, playList, songs);
+            newPlaylist.addToPlaylist();
 
         }
 
