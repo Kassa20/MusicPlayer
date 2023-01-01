@@ -1,3 +1,3 @@
 # Simple MusicPlayer 
 
-Simple MusicPlayer with Sql DataBase support
+MusicPlayer with Sql DataBase support
