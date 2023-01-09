@@ -4,6 +4,7 @@
 <img width="433" alt="image" src="https://user-images.githubusercontent.com/109251004/211236183-549341bb-a7be-4af4-ba99-b5e15150a748.png">
 
 
+![MusicPlayer](https://user-images.githubusercontent.com/109251004/211240174-4f5aab88-1aab-4e16-a9aa-ba3f4b18c3d6.png)
 
 
 This music player is created by C# and is able to store and play a selected song and dispaly its lyrics. While the app can play any song, there are only a few songs
