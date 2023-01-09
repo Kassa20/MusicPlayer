@@ -20,7 +20,6 @@ namespace MusicPlayer
         {
             InitializeComponent();
             mediaPlayer.settings.autoStart = false;
-            //MessageBox.Show("Select a song and enjoy!");
         }
         SqlConnection connect = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\DSU\\OneDrive\\Documents\\MusicDataBase.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -35,7 +34,7 @@ namespace MusicPlayer
             }
 
             catch(Exception ex)
-            {
+            {   
                 MessageBox.Show("Select a song and click play");
             }
 
@@ -73,7 +72,6 @@ namespace MusicPlayer
 
         private void AddPlaylist_Click(object sender, EventArgs e)
         {
-            playList.Items.Clear();
             var newPlaylist = new PList(files, playList, songs);
             newPlaylist.addToPlaylist();
         }

@@ -115,5 +115,13 @@
   <ItemGroup>
     <None Include="Resources\cassi-josh-lhnOvu72BM8-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lyric playable songs\Fleetwood Mac - Dreams [with lyrics].mp3" />
+    <Content Include="Lyric playable songs\Gotye - Somebody That I Used To Know %28feat. Kimbra%29 [Official Music Video].mp3" />
+    <Content Include="Lyric playable songs\Red Hot Chili Peppers - Californication.mp3" />
+    <Content Include="Lyric playable songs\The Verve - Bitter Sweet Symphony.mp3" />
+    <Content Include="Lyric playable songs\The Way You Make Me Feel %282012 Remaster%29.mp3" />
+    <Content Include="Lyric playable songs\You Rock My World.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
